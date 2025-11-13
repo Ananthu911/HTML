@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <center>
+        <form action="">
+             <input required minlength="3" maxlength="15" type="text" name="uname1" placeholder="Enter Your Name"> <br>
+             <input required type="email" name="email1" placeholder="Enter Your Email"> <br>
+             <input required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[A-Za-z0-9])(?!.*\s).{4,10}$" type="password" name="password" placeholder="Password"> <br>
+             DOB:<input type="date" name="date" value="DOB"> <br>
+             Salary: <input min="5000" max="1000000" type="number" name="sal" > <br>
+             check in time: <input type="time" name="intime" > <br>
+             <textarea name="add" cols="30" rows="10" placeholder="adress"></textarea> <br>
+             Department: <select name="dept" id="">
+                <option value="none">----Select a Deparment-----</option>
+                <option value="CS-AI">computer science with ai</option>
+                <option value="CS">computer science</option>
+                <option value="AIDS">AI,datascience</option>
+             </select> <br>
+             Gender: <input type="radio" name="gender" value="M">male
+             <input type="radio" name="gender" value="F">female
+             <input type="radio" name="gender" value="T">Trans <br>
+             choose electives: <br>
+             <input type="checkbox" name="elective" value="ja"> java programing <br>
+             <input type="checkbox" name="elective" value="py"> python programing <br>
+             <input type="checkbox" name="elective" value="django"> wb develpment <br>
+             <input type="checkbox" name="elective" value="AI"> atrificial intaligense <br>
+             <input type="submit" value="save">
+             <input type="reset" value="clear all">
+        </form>
+    </center>
+</body>
+</html>
