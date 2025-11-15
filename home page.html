@@ -8,9 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <style>
-        div{
-            border: 1px solid;
-        }
+
         .title{
             font-size: 40px;
             font-weight: bold;
@@ -24,16 +22,16 @@
         .carousel-control-next-icon,
     .carousel-control-prev-icon {
       background-color: black;
-    }
+    } 
     </style>
 </head>
 <body>
     <!--row 1 logo, company name, icons, welcome, logout-->>
     <div class="row">
-        <div class="col-1"><img src="ak3.jpg" style="width: 100%;" alt=""></div>
+        <div class="col-1"><img src="logo2.jfif" style="width: 100%;" alt=""></div>
         <div class="col-4">
-            <span class="title" style="color: goldenrod;">AK</span>
-            <span class="title" style="color: black;">FINANCE</span>
+            <span class="title" style="color: red;">AK</span>
+            <span class="title" style="color: rgb(39,130,182);">BMW</span>
         </div>
         <div class="col-3">
             <i class="bic bi bi-whatsapp" style="color: green;"></i>
@@ -45,11 +43,48 @@
         </div>
         <div class="col-3" style="padding: 30px;" >welcome, Ananthakrishnan</div>
         <div class="col-1">
-            <i class="bic bi bi-box-arrow-left" style="color: orangered;"></i>
+            <i class="bic bi bi-box-arrow-left" style="color: red;"></i>
         </div>
     <!--row 2 menu bar, search-->
-    <div class="row">
-        <div class="col-9">menu bar</div>
+    <div class="row" style="background-color: rgb(39,130,182);">
+        <div class="col-9" >
+          <nav class="navbar navbar-expand-lg bg-body-tertiary"  >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+        </div>
         <div class="col-3">
             <div class="input-group mb-3">
   <input type="text" class="form-control" placeholder="Search The Web" aria-label="Recipient’s username" aria-describedby="basic-addon2">
@@ -58,10 +93,10 @@
         </div>
     </div>
     <!--row 3 scrolling text-->
-    <div class="row">
+    <div class="row" style="background-color: red;">
         <div class="col-12">
             <marquee behavior="" direction="">
-                <h1>Welcom To Ak Finance</h1>
+                <h1>Welcom To Ak BMW</h1>
             </marquee>
         </div>
     </div>    
@@ -82,16 +117,16 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="marco.webp" class="d-block w-100" alt="...">
+          <img src="bmw1.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="mohanlal.jpg" class="d-block w-100" alt="...">
+          <img src="bmw2.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="officer.webp" class="d-block w-100" alt="...">
+          <img src="bmw3.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="thudarum.jpg" class="d-block w-100" alt="...">
+          <img src="bmw4.jpg" class="d-block w-100" alt="...">
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev">
@@ -111,35 +146,43 @@
     <div class="row">
             <div style="display: flex;">
       <div class="card" style="width: 18rem;">
-      <img src="marco.webp" class="card-img-top" alt="...">
+      <img src="bmw1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">MARCO</h5>
-        <p class="card-text">The Ever seen blood movie in malayalam industry</p>
-        <a href="https://en.wikipedia.org/wiki/Marco_(2024_film)" class="btn btn-primary">go</a>
+        <h5 class="card-title">BMW</h5>
+        <p class="card-text">The Ever seen Bautiful Eyes Seen In Earth.</p>
+        <a href="https://www.bmw.in/en/index.html" class="btn btn-primary">go</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="marco.webp" class="card-img-top" alt="...">
+      <img src="bmw1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">MARCO</h5>
-        <p class="card-text">The Ever seen blood movie in malayalam industry</p>
-        <a href="https://en.wikipedia.org/wiki/Marco_(2024_film)" class="btn btn-primary">go</a>
+        <h5 class="card-title">BMW</h5>
+        <p class="card-text">The Ever seen Bautiful Eyes Seen In Earth.</p>
+        <a href="https://www.bmw.in/en/index.html" class="btn btn-primary">go</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="marco.webp" class="card-img-top" alt="...">
+      <img src="bmw1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">MARCO</h5>
-        <p class="card-text">The Ever seen blood movie in malayalam industry</p>
-        <a href="https://en.wikipedia.org/wiki/Marco_(2024_film)" class="btn btn-primary">go</a>
+        <h5 class="card-title">BMW</h5>
+        <p class="card-text">The Ever seen Bautiful Eyes Seen In Earth.</p>
+        <a href="https://www.bmw.in/en/index.html" class="btn btn-primary">go</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="marco.webp" class="card-img-top" alt="...">
+      <img src="bmw1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">MARCO</h5>
-        <p class="card-text">The Ever seen blood movie in malayalam industry</p>
-        <a href="https://en.wikipedia.org/wiki/Marco_(2024_film)" class="btn btn-primary">go</a>
+        <h5 class="card-title">BMW</h5>
+        <p class="card-text">The Ever seen Bautiful Eyes Seen In Earth.</p>
+        <a href="https://www.bmw.in/en/index.html" class="btn btn-primary">go</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="bmw1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">BMW</h5>
+        <p class="card-text">The Ever seen Bautiful Eyes Seen In Earth.</p>
+        <a href="https://www.bmw.in/en/index.html" class="btn btn-primary">go</a>
       </div>
     </div>
     </div>
