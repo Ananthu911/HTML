@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% load static %}
+    <img src="{% static 'images/bmw3.jpg' %}"  style="width: 200px; height: 100px;"  >
+     <img src="{% static 'images/bmw4.jpg' %}"  style="width: 200px; height: 100px;"  >
+    <h1 style="color: blue;">Welcome to my first django project,{{name}} from {{college}}</h1>
+    <a href="{% url 'students'%}">Display Student</a>
+    <a href="{% url 'addstudent'%}">Add Student</a>
+    <a href="{% url 'register' %}">Register</a>
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'logout' %}">Logout</a>
+
+</body>
+</html>
