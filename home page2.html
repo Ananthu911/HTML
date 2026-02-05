@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +16,18 @@
 
     <!-- Custom Styling -->
     <style>
+        .nav-link-custom {
+            margin-left: 28px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
 
-
+        .nav-link-custom:hover {
+            opacity: 0.85;
+            text-decoration: underline;
+        }
 
         .hover-card {
             transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -47,7 +59,7 @@
     justify-content:space-between;
     align-items:center;
     padding:18px 64px;
-    background:linear-gradient(90deg, #0d6efd, #6610f2);
+    background:linear-gradient(90deg, black);
     box-shadow:0 4px 12px rgba(0,0,0,0.1);
     color:#fff;
     flex-wrap:wrap;
@@ -59,12 +71,7 @@
     </div>
 
     <nav>
-        <a href="{% url 'manage_course' %}" class="nav-link-custom " style="          margin-left: 28px;
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.3s ease; opacity: 0.85;
-            text-decoration: underline;">Manage Courses</a>
+        <a href="{% url 'manage_course' %}" class="nav-link-custom">Manage Courses</a>
         <a href="{% url 'add_course' %}" class="nav-link-custom">Add Course</a>
         <a href="{% url 'view_courses' %}" class="nav-link-custom">View Courses</a>
         <a href="{% url 'logout' %}" class="nav-link-custom" style="color:#ffdede;">Logout</a>
